@@ -26,7 +26,7 @@ class App extends Component {
   //WEBSITEDATA
   getResumeData(){
     $.ajax({
-      url:'./resumeData.json',
+      url:WEBSITEDATA,
       dataType:'json',
       cache: false,
       success: function(data){
@@ -49,8 +49,7 @@ class App extends Component {
         <Header data={this.state.resumeData.main}/>
         <About data={this.state.resumeData.main}/>
         <Resume data={this.state.resumeData.resume}/>
-        <Portfolio data={this.state.resumeData.resume.projects}/>
-        <Contact data={this.state.resumeData.main}/>
+        <Portfolio data={this.state.resumeData.resume}/>
         <Footer data={this.state.resumeData.main}/>
       </div>
     );
