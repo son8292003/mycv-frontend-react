@@ -30,7 +30,7 @@
       },
       {
         "name":"linkedin",
-        "url":"https://www.linkedin.com/in/tim-baker-8420009a/",
+        "url":"https://www.linkedin.com/in/jason-sio-a9709061/",
         "className":"fa fa-linkedin"
       },
       {
@@ -104,9 +104,9 @@
         "name":"JAVA",
         "level":"80%"
       }
-    ]
-  },
-  "portfolio":{
+    ],
+  
+
     "projects": [
       {
         "title":"Canadian Wanderlust",
