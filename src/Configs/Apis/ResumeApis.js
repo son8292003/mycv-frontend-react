@@ -1,2 +1,2 @@
-export const BASEURL = "http://localhost:1337/";
+export const BASEURL = "https://code-4-food.life/resume/cms/";
 export const WEBSITEDATA = BASEURL + "site-data";
