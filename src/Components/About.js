@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BASEURL} from '../Configs/Apis';
+import {MEDIABASEURL} from '../Configs/Apis';
 
 
 class About extends Component {
@@ -7,7 +7,7 @@ class About extends Component {
 
     if(this.props.data){
       var name = this.props.data.name;
-      var profilepic= BASEURL + this.props.data.image.url;
+      var profilepic= MEDIABASEURL + this.props.data.image.url;
       var bio = this.props.data.bio;
       var street = this.props.data.address.street;
       var city = this.props.data.address.city;
@@ -15,7 +15,7 @@ class About extends Component {
       var zip = this.props.data.address.zip;
       var phone= this.props.data.phone;
       var email = this.props.data.email;
-      var resumeDownload = BASEURL + this.props.data.resumedownload.url;
+      var resumeDownload = MEDIABASEURL + this.props.data.resumedownload.url;
     }
 
     return (
@@ -39,11 +39,6 @@ class About extends Component {
 						   <span>{phone}</span><br />
                      <span>{email}</span>
 					   </p>
-               </div>
-               <div className="columns download">
-                  <p>
-                     <a href={resumeDownload} className="button"><i className="fa fa-download"></i>Download Resume</a>
-                  </p>
                </div>
             </div>
          </div>
